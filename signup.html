@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulphato/Sign Up</title>
+    <link rel="stylesheet" href="FontAwesome/css/all.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <form action="signUpDetails.php" method="post" name="signUp" onsubmit="formValidate()">
+        <div class="content-ctn">
+            <h2>Sign Up</h2>
+            <div class="content" id="input1">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Name" name="name" required>
+            </div>
+            <div class="content" id="input2">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                <input type="text" placeholder="Email" name="email" required>
+            </div>
+            <div class="content" id="input3">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Password" name="password" required>
+                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            </div>
+            <div class="content" id="input3">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Confirm Password" name="password1" required>
+                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            </div>
+            <div class="content1">
+                <input type="checkbox" required>
+                <p>I have read and agree to the <a href="">Terms and Conditions</a></p> 
+            </div>
+            <div class="submit-button">
+                <button type="submit" name="submit">Create Account</button>
+            </div>
+            <div class="content1" id="already-have">
+                <p>Already have an account? <a href="">Sign In</a></p>
+            </div>
+        </div>
+    </form>
+    <script src="signup.js"></script>
+</body>
+</html>
